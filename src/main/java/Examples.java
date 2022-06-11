@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Examples {
     public static void main(String[] args) {
 //        System.out.println("Examples of loops");
@@ -7,9 +9,9 @@ public class Examples {
 ////        loops.doWhileLoop();
 ////        loops.forLoop();
 
-        Arrays arrays = new Arrays(new String[3],new String[3][3]);
+        Arrays arrays = new Arrays(new String[3],new String[3][3],new ArrayList<>());
         arrays.simpleArray();
         arrays.multiDimensionArray();
-
+        arrays.resizableArray();
     }
 }

@@ -1,12 +1,16 @@
+import java.util.ArrayList;
+
 public class Arrays {
 
     // array - store multiple values in a single variable
     String[] car;
     String[][] cars;
+    ArrayList<String> carr;
 
-    public Arrays(String[] car, String[][] cars) {
+    public Arrays(String[] car, String[][] cars,ArrayList<String> carr) {
         this.car = car;
         this.cars = cars;
+        this.carr = carr;
     }
     public void simpleArray() {
         car[0] = "Fiat";
@@ -38,4 +42,30 @@ public class Arrays {
             }
         }
     }
+
+
+    //ArrayList - Resizable Array
+
+    public void resizableArray(){
+
+        carr.add("ferrari");
+        carr.add("lamborghini");
+        carr.add("bentley");
+
+        carr.set(1,"mercedes-benz");
+        carr.remove(2);
+
+        for(int i=0;i<carr.size();i++){
+            System.out.println(carr.get(i));
+        }
+
+
+
+    }
+
+
+
+
+
+
 }
