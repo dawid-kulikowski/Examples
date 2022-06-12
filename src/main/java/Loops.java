@@ -49,9 +49,6 @@ public class Loops {
         for(String i : animals) {
             System.out.println(i+"s");
         }
-
-
-
     }
 
 
