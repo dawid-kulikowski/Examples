@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Examples {
     public static void main(String[] args) {
 //        System.out.println("Examples of loops");
-//        Loops loops = new Loops(5,5,6,"/");
+        Loops loops = new Loops(5,5,6,"/");
 ////        loops.nestedLoop();
 ////        loops.whileLoop();
 ////        loops.doWhileLoop();
@@ -14,7 +14,7 @@ public class Examples {
         arrays.multiDimensionArray();
         arrays.resizableArray();
         arrays.multiDimensionArrayList();
-
+        loops.forEachLoop();
 
     }
 }

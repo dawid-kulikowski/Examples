@@ -36,6 +36,25 @@ public class Loops {
         }
     }
 
+    //for-each loop
+
+
+    public void forEachLoop(){
+
+        String[] animals = new String[3];
+        animals[0] = "tiger";
+        animals[1] = "cat";
+        animals[2] = "dog";
+
+        for(String i : animals) {
+            System.out.println(i+"s");
+        }
+
+
+
+    }
+
+
 // nestedLooop - loop inside  of a loop
    public void nestedLoop(){
         for(int i=1; i<a; i++){
