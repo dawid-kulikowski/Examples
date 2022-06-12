@@ -6,6 +6,14 @@ public class Methods {
     double e;
     double f;
 
+    String name;
+    String surname;
+
+    public Methods(String name, String surname) {
+        this.name = name;
+        this.surname = surname;
+    }
+
     public Methods(int a, int b, int c, double d, double e, double f) {
         this.a = a;
         this.b = b;
@@ -34,6 +42,13 @@ public class Methods {
         System.out.println(d+e+f);
         return d+e+f;
     }
+
+    // Overriding toString Method
+    public String toString(){
+        return name+surname;
+    }
+
+
 
 
 }

@@ -24,9 +24,12 @@ public class Examples {
         // Methods
 
         Methods methods = new Methods(2,3,4,5,6,7);
+        Methods methods1 = new Methods("Dawid","Kulikowski");
         methods.add(5,6);
         methods.add(5,6,7);
         methods.add(3.0,3.5,3.3);
+
+        System.out.println(methods1.toString());
 
 
 
