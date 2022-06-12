@@ -6,11 +6,19 @@ public class Arrays {
     String[] car;
     String[][] cars;
     ArrayList<String> carr;
+    ArrayList<String> carrr;
+    ArrayList<String> carrrr;
+    ArrayList<ArrayList<String>> multiDimensionArraylist;
 
-    public Arrays(String[] car, String[][] cars,ArrayList<String> carr) {
+
+    public Arrays(String[] car, String[][] cars,ArrayList<String> carr,ArrayList<String> carrr,ArrayList<String> carrrr,ArrayList<ArrayList<String>> multiDimensionArraylist) {
         this.car = car;
         this.cars = cars;
         this.carr = carr;
+        this.carrr = carrr;
+        this.carrrr = carrrr;
+        this.multiDimensionArraylist = multiDimensionArraylist;
+
     }
     public void simpleArray() {
         car[0] = "Fiat";
@@ -46,26 +54,42 @@ public class Arrays {
 
     //ArrayList - Resizable Array
 
-    public void resizableArray(){
+    public void resizableArray() {
 
         carr.add("ferrari");
         carr.add("lamborghini");
         carr.add("bentley");
 
-        carr.set(1,"mercedes-benz");
+        carr.set(1, "mercedes-benz");
         carr.remove(2);
 
-        for(int i=0;i<carr.size();i++){
+        for (int i = 0; i < carr.size(); i++) {
             System.out.println(carr.get(i));
         }
-
-
-
     }
 
+        // 2D array list
+        public void multiDimensionArrayList() {
 
 
+            carr.add("ferrari");
+            carr.add("lamborghini");
+            carr.add("bentley");
 
+            carrr.add("ferrari");
+            carrr.add("lamborghini");
+            carrr.add("bentley");
 
+            carrrr.add("ferrari");
+            carrrr.add("lamborghini");
+            carrrr.add("bentley");
 
-}
+            multiDimensionArraylist.add(carr);
+            multiDimensionArraylist.add(carrr);
+            multiDimensionArraylist.add(carrrr);
+
+            System.out.println(multiDimensionArraylist);
+
+        }
+    }
+

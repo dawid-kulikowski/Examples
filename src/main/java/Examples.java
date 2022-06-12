@@ -9,9 +9,12 @@ public class Examples {
 ////        loops.doWhileLoop();
 ////        loops.forLoop();
 
-        Arrays arrays = new Arrays(new String[3],new String[3][3],new ArrayList<>());
+        Arrays arrays = new Arrays(new String[3],new String[3][3],new ArrayList<>(),new ArrayList<>(),new ArrayList<>(),new ArrayList<>());
         arrays.simpleArray();
         arrays.multiDimensionArray();
         arrays.resizableArray();
+        arrays.multiDimensionArrayList();
+
+
     }
 }
